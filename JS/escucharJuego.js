@@ -5,22 +5,24 @@ const inputLetras = document.querySelector("#input-letras");
 let letraIncorrecta = [];
 let letraCorrecta = [];
 let letrasUtilizadas = [];
+let letra = "A";
 
 escucharJuego(inputLetras);
 
 function escucharJuego(eleInput){
-    eleInput.addEventListener("keypress",function(input){
-        inputLetras.value = "";
+    eleInput.addEventListener("keyup",function(){
         if(detenerJuego == false){
-            let letra = input.key.toUpperCase();
+            letra = inputLetras.value.toUpperCase();
+            console.log(letra);
+            inputLetras.value = "";
             if(!regex.test(letra)){
                 return;
             }else if(letrasUtilizadas.includes(letra)){
                 alert("letra utilizada");
-                
             }else {
                 ejecutarLetra(letra);
                 letrasUtilizadas.push(letra);
+                console.log(letrasUtilizadas);
                 verificarGanador();
             } 
         } else {

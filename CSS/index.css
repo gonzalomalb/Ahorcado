@@ -63,6 +63,7 @@ main {
     border-color: transparent;
     background-color: transparent;
     color: transparent;
+    resize: none;
     
 }
 
