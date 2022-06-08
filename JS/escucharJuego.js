@@ -16,9 +16,11 @@ function escucharJuego(eleInput){
             console.log(letra);
             inputLetras.value = "";
             if(!regex.test(letra)){
-                return;
+                alert("solo letras");
+                focusLetras();
             }else if(letrasUtilizadas.includes(letra)){
                 alert("letra utilizada");
+                focusLetras();
             }else {
                 ejecutarLetra(letra);
                 letrasUtilizadas.push(letra);
