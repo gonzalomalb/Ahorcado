@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>[---[Juego del ahorcado]---]</title>
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/header-footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body onclick="focusLetras();">
+    <header>
+        <img id="alura-logo" src="Imagenes/Alura_Logo.png" alt="Alura logo">
+        <h1>Juego del ahorcado</h1>
+    </header>
+
+    <main>
+        <section class="section-inicio" id="section-inicio">
+            <button class="boton1" id="iniciarJuego" onclick="iniciarJuego()">Iniciar</button>
+
+            <div id="contenedor-checkbox">
+                <input type="checkbox" id="checkbox" unchecked>
+                <label for="checkbox" id="label-checkbox">Iniciar el juego con la palabra agregada ?</label>
+            </div>
+            <div id="contenedor-agregar-palabra">
+                <button class="boton2" id="agregar-palabra-boton"
+                    onclick="adicionarPalabra(inputAgregarPalabra )">Agregar palabra</button>
+                <input type="text" id="agregar-palabra-input" class="invisible">
+            </div>
+        </section>
+
+        <section class="invisible" id="section-juego">
+            <input id="input-letras" spellcheck="false">
+            <canvas width="600px" height="400px" id="canvas"></canvas>
+            <textarea readonly type="text" id="texto-resultado" class="invisible"></textarea>
+            <div>
+                <table>
+                    <tbody id="tabla">
+                    </tbody>
+                </table>
+                <p id="letras-incorrectas"></p>
+                <button id="boton-terminar" class="boton1" onclick="terminarJuego()">Volver</button>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer" class="footer">
+        <p>Gonzalo Matias Albornoz</p>
+        <a href="https://github.com/gonzalomalb?tab=repositories"><img id="ghlogo" src="Imagenes/GitHub_Logo_White.png"
+                alt="GitHub logo"></a>
+    </footer>
+</body>
+
+<script src="JS/visuales.js"></script>
+<script src="JS/crearJuego.js"></script>
+<script src="JS/escucharJuego.js"></script>
+
+</html>

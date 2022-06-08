@@ -1,0 +1,40 @@
+header h1 {
+    width: auto;
+    margin-top: 25px;
+    text-align: center;
+    box-sizing: border-box;
+    font-family: 'Syne Mono', monospace;
+    font-size: 80px;
+    text-decoration: solid underline;
+    color: rgb(44, 44, 44);
+}
+
+#alura-logo {
+    position: relative;
+    top: 60px;
+    left: 60px;
+}
+
+footer {
+    text-align: center;
+    margin-top: -140px;
+    color: rgb(44, 44, 44);
+    font-size: 22px;
+}
+
+#ghlogo {
+    padding: 15px;
+    width: 100px;
+    display: inline-block;
+    transition: 1s;
+}
+
+#ghlogo:hover {
+    transform: scale(1.25);
+}
+
+@media screen and (max-width: 480px) {
+    footer {
+        text-align: end center;
+    }
+}

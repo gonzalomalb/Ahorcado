@@ -1,0 +1,212 @@
+body {
+    width: auto;
+    background-color: rgb(174, 174, 174);
+}
+
+main {
+    width: 1200px;
+    height: 800px;
+    margin: 20px auto;
+}
+
+/* section Inicio */
+
+.section-inicio {
+    text-align: center;
+    padding: 144px;
+}
+
+#label-checkbox {
+    font-family: 'Syne Mono', monospace;
+    color: rgb(44,44,44);
+    font-size: 18px;
+}
+
+#contenedor-checkbox{
+    margin-top: 20px;
+    position: relative;
+    left: 160px;
+}
+
+#contenedor-agregar-palabra {
+    margin-top: 60px;
+}
+
+#agregar-palabra-input {
+    outline: none;
+    font-family: 'Syne Mono', monospace;
+    color: rgb(44,44,44);
+    font-size: 18px;
+}
+
+.agregar-palabra-input{
+    position: relative;
+}
+
+
+
+
+/* section Juego */
+
+.section-juego {
+    text-align: center;
+}
+
+#input-letras{
+    position: absolute;
+    top: 500px;
+    left: 600px;
+    width: 50px;
+    height: 30px;
+    outline: none;
+    border-color: transparent;
+    background-color: transparent;
+    color: transparent;
+    
+}
+
+canvas {
+    margin-top: 40px;
+    width: auto;
+    height: auto;
+}
+
+.texto-resultado-ganador {
+    position: relative;
+    bottom: 120px;
+    right: 150px;
+    background-color: transparent;
+    border-color: transparent;
+    resize: none;
+    width: auto;
+    height: auto;
+    font-size: 50px;
+    font-family: 'Syne Mono', monospace;
+    color: green;
+    
+}
+
+.texto-resultado-perdedor {
+    position: relative;
+    bottom: 100px;
+    right: 200px;
+    background-color: transparent;
+    border-color: transparent;
+    resize: none;
+    width: auto;
+    height: auto;
+    font-size: 50px;
+    font-family: 'Syne Mono', monospace;
+    color: red;
+    
+}
+
+table {
+    margin: 10px 10px;
+    table-layout: fixed;
+    display: inline-block;
+}
+
+.columna {
+    padding-right: 40px;
+    font-size: 50px;
+    font-family: 'Syne Mono', monospace;
+}
+
+.guiones {
+    position: relative;
+    top: -40px;
+}
+
+.letra-invisible {
+    padding-right: 40px;
+    font-size: 50px;
+    opacity: 0;
+}
+
+#letras-incorrectas {
+    margin: 20px;
+    font-size: 30px;
+    font-family: 'Syne Mono', monospace;
+}
+
+#boton-terminar {
+    position: relative;
+    left: -265px;
+}
+
+/* Botones */
+.boton1 {
+    width: 130px;
+    height: 75px;
+    margin: 20px;
+    background-color: transparent;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 120px;
+    font-size: 24px;
+    color: rgb(44, 44, 44);
+    font-weight: bold;
+    font-family: 'Roboto Mono', monospace;
+    transition: 300ms;
+}
+
+.boton1:hover {
+    transform: scale(1.1);
+}
+
+.boton1:active {
+    transform: scale(0.8);
+}
+
+.boton2 {
+    width: 120px;
+    height: 60px;
+    font-size: 18px;
+    font-family: 'Roboto Mono', monospace;;
+    background-color: transparent;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 120px;
+    color: rgb(44, 44, 44);
+    font-weight: lighter;
+    box-sizing: border-box;
+    display: inline-block;
+    position: relative;
+    bottom: 10px;
+    margin: 20px 15px;
+    transition: 300ms;
+}
+
+.boton2:hover {
+    transform: scale(1.1);
+}
+
+.boton2:active {
+    transform: scale(0.8);
+}
+
+
+/*invisible*/
+.invisible {
+    display: none;
+}
+
+
+
+
+/*responsive*/
+
+@media screen and (max-width: 480px) {
+    body, main, section{
+        display: inline-block;
+        text-align: center;
+        margin: 0 auto;
+        width: max-content;
+    }
+
+    #contenedor-checkbox{
+        position: inherit;
+        left: 0;
+    }
+}
