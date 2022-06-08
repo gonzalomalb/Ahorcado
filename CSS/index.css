@@ -1,5 +1,6 @@
 body {
-    width: auto;
+    margin: auto;
+    width: max-content;
     background-color: rgb(174, 174, 174);
 }
 
@@ -202,7 +203,6 @@ table {
         display: inline-block;
         text-align: center;
         margin: 0 auto;
-        width: max-content;
     }
 
     #contenedor-checkbox{

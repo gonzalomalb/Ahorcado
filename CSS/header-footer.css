@@ -10,9 +10,9 @@ header h1 {
 }
 
 #alura-logo {
-    position: relative;
-    top: 60px;
-    left: 60px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
 }
 
 footer {
