@@ -127,14 +127,15 @@ table {
 }
 
 #letras-incorrectas {
-    margin: 20px;
+    margin: -30px;
     font-size: 30px;
     font-family: 'Syne Mono', monospace;
 }
 
 #boton-terminar {
     position: relative;
-    left: -265px;
+    top: 11%;
+    right: 35%;
 }
 
 /* Botones */

@@ -5,7 +5,7 @@ const inputAgregarPalabra = document.querySelector("#agregar-palabra-input");
 const checkbox = document.querySelector("#checkbox");
 const tabla = document.querySelector("#tabla");
 const regex = new RegExp(/^[A-Z]+$/, "i");
-let palabras = ["JAVASCRIPT", "HTML", "CSS", "ALURA", "ORACLE", "ONE", "PROGRAMACION"];
+let palabras = ["JAVASCRIPT", "HTML", "CSS", "ALURA", "ORACLE", "ONE", "PROGRAMACION", "TECNOLOGIA", "LOGICA"];
 let palabraElegida = "";
 let detenerJuego = true;
 
